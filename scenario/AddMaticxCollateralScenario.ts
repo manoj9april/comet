@@ -12,7 +12,7 @@ const MATICX_WHALES = {
 
 // TODO: add ability to run ad hoc scenarios against a single migration, to avoid needing the scenario to do all this setup of
 // listing an asset
-scenario(
+scenario.only(
   'add new asset maticx',
   {
     filter: async (ctx) =>
